@@ -64,7 +64,21 @@ function deleteContact(key) {
 }
 
 // function for adding todo
+function addContact(name, email, imageurl, contactnumber, id) {
+  const contactObject = {
+    name: document.getElementById("fullName").value,
+    email: document.getElementById("myEmail").value,
+    imageurl: document.getElementById("imgurl").value,
+    contactnumber: document.getElementById("myTel").value,
+    id: Date.now(),
+  };
 
+  // push a contactObject in todoItems array for store a data as a array in localstorage
+  contacts.push(contactObject);
+  /* console.log(todoItems); */
+  // rendering contactObject in renderContact function as a prameter
+  renderContact(contactObject);
+}
 
 // add a event listner submit to the form
 const form = document.querySelector(".js-form");
