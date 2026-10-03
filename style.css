@@ -73,3 +73,78 @@ body {
 .contactdetail {
   margin-right: 5rem;
 }
+/*added By Alankar Kadam */
+.contactIcon {
+  margin: 0 10px 0 5px;
+  font-size: 14px;
+  color: var(--contactIconColor);
+}
+
+.person h4 {
+  margin-bottom: 0.35rem;
+}
+
+.person p {
+  margin-bottom: 0;
+}
+
+.delete-contact {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  float: right;
+  display: block;
+  position: absolute;
+  right: 10%;
+}
+
+.delete-contact svg {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  fill: var(--deleteIconColor);
+}
+
+form {
+  width: 50%;
+  left: 50%;
+  margin-top: 15%;
+  margin-left: 7%;
+  position: fixed;
+}
+
+.name,
+.number,
+.email,
+.img {
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 30%;
+  align-items: center;
+  margin-bottom: 30px;
+  background: var(--bg-color);
+  border: 5px solid var(--bg-color);
+  filter: var(--filter);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"] {
+  width: 240px;
+  background: transparent;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 200px;
+  padding: 10px 0;
+  transition: border 0.5s;
+  outline: none;
+  color: var(--inputTextColor);
+  font-weight: bold;
+}
+
+.submitbtn {
+  display: none;
+}
